@@ -1,0 +1,27 @@
+<div class="container h-85 mt-3">
+  <h2>Engineer List</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Address</th>
+        <th>Phonenumber</th>
+        <th>Area</th>
+        <th>Salary</th>
+        <th>Timings</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let engineer of engineers">
+        <td>{{ engineer.name }}</td>
+        <td>{{ engineer.age }}</td>
+        <td>{{ engineer.address }}</td>
+        <td>{{ engineer.phonenumber }}</td>
+        <td>{{ engineer.area }}</td>
+        <td>{{ engineer.salary }}</td>
+        <td>{{ engineer.timings }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

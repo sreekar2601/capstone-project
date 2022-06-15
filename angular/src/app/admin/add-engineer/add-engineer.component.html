@@ -1,0 +1,96 @@
+<div class="container h-85 mt-5">
+  <div class="row h-100 justify-content-center align-items-center">
+    <div class="col-10 col-md-8 col-lg-4">
+      <h3 class="text-center">Add Engineer</h3>
+      <form (ngSubmit)="onsubmit()">
+        <div class="row">
+          <div class="form-group">
+            <label>name</label>
+            <input
+              type="text"
+              id="name"
+              class="form-control"
+              name="name"
+              [(ngModel)]="engineer.name"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group">
+            <label>age</label>
+            <input
+              type="text"
+              id="age"
+              class="form-control"
+              name="age"
+              [(ngModel)]="engineer.age"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group">
+            <label>address</label>
+            <input
+              type="text"
+              id="address"
+              class="form-control"
+              name="address"
+              [(ngModel)]="engineer.address"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group">
+            <label>phonenumber</label>
+            <input
+              type="text"
+              id="phonenumber"
+              class="form-control"
+              name="phonenumber"
+              [(ngModel)]="engineer.phonenumber"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group">
+            <label>area</label>
+            <input
+              type="text"
+              id="area"
+              class="form-control"
+              name="area"
+              [(ngModel)]="engineer.area"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group">
+            <label>salary</label>
+            <input
+              type="text"
+              id="salary"
+              class="form-control"
+              name="salary"
+              [(ngModel)]="engineer.salary"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group">
+            <label>timings</label>
+            <input
+              type="text"
+              id="timings"
+              class="form-control"
+              name="timings"
+              [(ngModel)]="engineer.timings"
+            />
+          </div>
+        </div>
+        <div class="d-flex justify-content-center md-3">
+          <button class="btn btn-success m-2" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+<div class="bg">
+  <div class="container">
+    <h3 class="text-center">Complaint Redressal System</h3>
+    <div class="row mt-3">
+      <div class="col">
+        <ul class="nav nav-tabs">
+          <li
+            role="presentation"
+            class="nav-item"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <a class="nav-link" routerLink="/">Home</a>
+          </li>
+          <li role="presentation" class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink="admin">Admin</a>
+          </li>
+          <li role="presentation" class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink="manager">Manager</a>
+          </li>
+          <li role="presentation" class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink="customer">Customer</a>
+          </li>
+          <li role="presentation" class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink="engineer">Engineer</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="container h-85 mt-3">
+  <h2>Manager List</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Address</th>
+        <th>Phonenumber</th>
+        <th>Area</th>
+        <th>Salary</th>
+        <th>Timings</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let manager of managers">
+        <td>{{ manager.name }}</td>
+        <td>{{ manager.age }}</td>
+        <td>{{ manager.address }}</td>
+        <td>{{ manager.phonenumber }}</td>
+        <td>{{ manager.area }}</td>
+        <td>{{ manager.salary }}</td>
+        <td>{{ manager.timings }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

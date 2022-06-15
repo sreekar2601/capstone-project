@@ -1,0 +1,74 @@
+<div class="container h-85 mt-5">
+  <div class="row h-100 justify-content-center align-items-center">
+    <div class="col-10 col-md-8 col-lg-4">
+      <h3 class="text-center">Complaint Form</h3>
+      <form (ngSubmit)="onsubmit()">
+        <div class="row">
+          <div class="form-group">
+            <label>name</label>
+            <input
+              type="text"
+              id="name"
+              class="form-control"
+              name="name"
+              [(ngModel)]="customercomplaint.name"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group">
+            <label>address</label>
+            <input
+              type="text"
+              id="address"
+              class="form-control"
+              name="address"
+              [(ngModel)]="customercomplaint.address"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group">
+            <label>pincode</label>
+            <input
+              type="text"
+              id="pincode"
+              class="form-control"
+              name="pincode"
+              [(ngModel)]="customercomplaint.pincode"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group">
+            <label>phonenumber</label>
+            <input
+              type="text"
+              id="phonenumber"
+              class="form-control"
+              name="phonenumber"
+              [(ngModel)]="customercomplaint.phonenumber"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group">
+            <label>typeofproblem</label>
+            <input
+              type="text"
+              id="typeofproblem"
+              class="form-control"
+              name="typeofproblem"
+              [(ngModel)]="customercomplaint.typeofproblem"
+            />
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center md-3">
+          <button class="btn btn-success m-2" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
